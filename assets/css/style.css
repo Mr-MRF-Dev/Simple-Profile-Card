@@ -103,9 +103,35 @@ html {
 }
 
 .about {
+  margin-block-end: 2.9rem;
+
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5rem;
 
   color: #000000;
+}
+
+.btn-container {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn {
+  width: 3.2rem;
+  height: 3.2rem;
+
+  padding: 0.6rem;
+
+  background: #c1c1c1;
+  border-radius: 1rem;
+  border: 0;
+}
+
+.icon {
+  filter: invert(0);
+}
+
+.btn:hover {
+  background: #b1b1b1;
 }
