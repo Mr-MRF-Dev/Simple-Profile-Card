@@ -39,6 +39,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  transition: all 0.5s ease;
 }
 
 html {
@@ -49,24 +50,46 @@ html {
   font-style: normal;
 }
 
-.bg {
+#bg {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--bg-background);
 }
 
 .bg-light {
+  background: var(--bg-background);
   background: var(--bg-background-gradient-light);
 }
 
 .bg-dark {
+  background: var(--bg-background);
   background: var(--bg-background-gradient-dark);
 }
 
-.card {
+#toggle {
+  position: absolute;
+  width: 2.2rem;
+  height: 2.2rem;
+
+  padding: 0;
+  border: 0;
+  background: 0;
+
+  right: 1.2rem;
+  top: 1.2rem;
+}
+
+.toggle-light::after {
+  content: url("../icons/moon.svg");
+}
+
+.toggle-dark::after {
+  content: url("../icons/sun.svg");
+}
+
+#card {
   width: 30rem;
   height: 40rem;
   padding-inline: 2.8rem;
@@ -111,7 +134,7 @@ html {
   font-feature-settings: "pnum" on, "lnum" on;
 }
 
-.title {
+#title {
   margin-block-start: 2.4rem;
   margin-block-end: 0.8rem;
 
@@ -120,7 +143,7 @@ html {
   line-height: 2rem;
 }
 
-.subtitle {
+#subtitle {
   margin-block-end: 1.5rem;
 
   font-weight: 400;
@@ -128,7 +151,7 @@ html {
   line-height: 2rem;
 }
 
-.about {
+#about {
   margin-block-end: 2.9rem;
 
   font-weight: 400;
@@ -152,7 +175,7 @@ html {
   color: var(--text-secondary-color-dark);
 }
 
-.btn-container {
+#btn-container {
   display: flex;
   gap: 0.8rem;
 }

@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="bg bg-light">
-      <div class="card card-light">
+    <div id="bg" class="bg-light">
+      <button id="toggle" class="toggle-light"></button>
+
+      <div id="card" class="card-light">
         <div class="halo">
           <img
             class="profile"
@@ -17,14 +19,16 @@
             alt="Profile Photo"
           />
         </div>
-        <h1 class="title text text-primary-light">Mr MRF Dev</h1>
-        <h2 class="subtitle text text-secondary-light">Front-End Developer</h2>
-        <p class="about text text-primary-light">
+        <h1 id="title" class="text text-primary-light">Mr MRF Dev</h1>
+        <h2 id="subtitle" class="text text-secondary-light">
+          Front-End Developer
+        </h2>
+        <p id="about" class="text text-primary-light">
           I am a good listener and learner, able to communicate well with a
           group and on an individual level. I always seek to achieve a high
           standard in whatever work I undertake.
         </p>
-        <div class="btn-container">
+        <div id="btn-container">
           <a
             href="https://github.com/Mr-MRF-Dev"
             target="_blank"
@@ -84,6 +88,71 @@
       </div>
     </div>
   </body>
+
+  <script>
+    //Toggle mode
+    const toggle = document.getElementById("toggle");
+    const bg = document.getElementById("bg");
+    const card = document.getElementById("card");
+    const title = document.getElementById("title");
+    const subtitle = document.getElementById("subtitle");
+    const about = document.getElementById("about");
+    const btns = document.querySelectorAll(".btn");
+
+    toggle.addEventListener("click", () => {
+      if (toggle.classList.contains("toggle-light")) {
+        toggle.classList.remove("toggle-light");
+        toggle.classList.add("toggle-dark");
+
+        bg.classList.remove("bg-light");
+        bg.classList.add("bg-dark");
+
+        card.classList.remove("card-light");
+        card.classList.add("card-dark");
+
+        title.classList.remove("text-primary-light");
+        title.classList.add("text-primary-dark");
+
+        subtitle.classList.remove("text-secondary-light");
+        subtitle.classList.add("text-secondary-dark");
+
+        about.classList.remove("text-primary-light");
+        about.classList.add("text-primary-dark");
+
+        btns.forEach((btn) => {
+          btn.classList.remove("btn-light");
+          btn.classList.add("btn-dark");
+          btn.children[0].classList.remove("icon-light");
+          btn.children[0].classList.add("icon-dark");
+        });
+      } else {
+        toggle.classList.remove("toggle-dark");
+        toggle.classList.add("toggle-light");
+
+        bg.classList.remove("bg-dark");
+        bg.classList.add("bg-light");
+
+        card.classList.remove("card-dark");
+        card.classList.add("card-light");
+
+        title.classList.remove("text-primary-dark");
+        title.classList.add("text-primary-light");
+
+        subtitle.classList.remove("text-secondary-dark");
+        subtitle.classList.add("text-secondary-light");
+
+        about.classList.remove("text-primary-dark");
+        about.classList.add("text-primary-light");
+
+        btns.forEach((btn) => {
+          btn.classList.remove("btn-dark");
+          btn.classList.add("btn-light");
+          btn.children[0].classList.remove("icon-dark");
+          btn.children[0].classList.add("icon-light");
+        });
+      }
+    });
+  </script>
 </html>
 
 <!-- class="icon" -->
