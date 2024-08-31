@@ -2,16 +2,38 @@
 
 :root {
   /* Bg */
-  --body-background-light: rgb(244, 188, 205);
-  --body-background-gradient-light: linear-gradient(
+  --bg-background: rgb(244, 188, 205);
+  --bg-background-gradient-light: linear-gradient(
     45deg,
     rgba(244, 188, 205, 1) 0%,
     rgba(232, 203, 245, 1) 50%,
     rgba(175, 184, 255, 1) 100%
   );
 
+  --bg-background-gradient-dark: linear-gradient(
+    45deg,
+    #f4bccd 0%,
+    #a592ad 50%,
+    #afb8ff 100%
+  );
+
   /* Card  */
   --card-background-light: rgba(255, 255, 255, 0.6);
+  --card-background-dark: rgba(0, 0, 0, 0.6);
+
+  /* Text */
+  --text-primary-color-light: #000;
+  --text-primary-color-dark: #fff;
+
+  --text-secondary-color-light: #4d4d4d;
+  --text-secondary-color-dark: #d2d2d2;
+
+  /* Button */
+  --btn-background-light: #c1c1c1;
+  --btn-background-dark: #1c1c1c;
+
+  --btn-background-light-hover: #b1b1b1;
+  --btn-background-dark-hover: #2c2c2c;
 }
 
 * {
@@ -33,11 +55,15 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--bg-background);
 }
 
 .bg-light {
-  background: var(--body-background-light);
-  background: var(--body-background-gradient-light);
+  background: var(--bg-background-gradient-light);
+}
+
+.bg-dark {
+  background: var(--bg-background-gradient-dark);
 }
 
 .card {
@@ -57,6 +83,10 @@ html {
 
 .card-light {
   background: var(--card-background-light);
+}
+
+.card-dark {
+  background: var(--card-background-dark);
 }
 
 .halo {
@@ -88,8 +118,6 @@ html {
   font-weight: 900;
   font-size: 2.5rem;
   line-height: 2rem;
-
-  color: #000000;
 }
 
 .subtitle {
@@ -98,8 +126,6 @@ html {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 2rem;
-
-  color: #4d4d4d;
 }
 
 .about {
@@ -108,8 +134,22 @@ html {
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.5rem;
+}
 
-  color: #000000;
+.text-primary-light {
+  color: var(--text-primary-color-light);
+}
+
+.text-primary-dark {
+  color: var(--text-primary-color-dark);
+}
+
+.text-secondary-light {
+  color: var(--text-secondary-color-light);
+}
+
+.text-secondary-dark {
+  color: var(--text-secondary-color-dark);
 }
 
 .btn-container {
@@ -123,15 +163,30 @@ html {
 
   padding: 0.6rem;
 
-  background: #c1c1c1;
   border-radius: 1rem;
   border: 0;
 }
 
-.icon {
+.btn-light {
+  background: var(--btn-background-light);
+}
+
+.btn-dark {
+  background: var(--btn-background-dark);
+}
+
+.btn-light:hover {
+  background: var(--btn-background-light-hover);
+}
+
+.btn-dark:hover {
+  background: var(--btn-background-dark-hover);
+}
+
+.icon-light {
   filter: invert(0);
 }
 
-.btn:hover {
-  background: #b1b1b1;
+.icon-dark {
+  filter: invert(100%);
 }
