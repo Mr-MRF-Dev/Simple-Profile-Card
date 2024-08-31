@@ -77,6 +77,8 @@ html {
   border: 0;
   background: 0;
 
+  cursor: pointer;
+
   right: 1.2rem;
   top: 1.2rem;
 }
