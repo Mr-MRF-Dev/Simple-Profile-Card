@@ -45,13 +45,6 @@ The design was created using [Figma](https://www.figma.com/community/file/140096
     You can use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in VSCode.
     Alternatively, you can do this by right-clicking on the file and selecting `Open with` and then selecting your browser.
 
-## 🛠️ Built With
-
-- HTML
-- CSS
-- [Figma](https://www.figma.com/)
-- [VSCode](https://code.visualstudio.com/)
-
 ## 🤝 Contributing
 
 We welcome any contributions you may have. If you're interested in helping out, please fork the repository and create an [Issue](https://github.com/Mr-MRF-Dev/Simple-Profile-Card/issues) or [Pull Request](https://github.com/Mr-MRF-Dev/Simple-Profile-Card/pulls).
