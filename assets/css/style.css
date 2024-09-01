@@ -48,6 +48,8 @@ html {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   font-style: normal;
+
+  overflow: hidden;
 }
 
 #bg {
