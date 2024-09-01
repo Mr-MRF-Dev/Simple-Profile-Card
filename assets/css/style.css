@@ -40,6 +40,9 @@
   margin: 0;
   box-sizing: border-box;
   transition: all 0.6s ease;
+
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
 }
 
 html {
@@ -48,8 +51,6 @@ html {
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   font-style: normal;
-
-  overflow: hidden;
 }
 
 #bg {
