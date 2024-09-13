@@ -51,4 +51,4 @@ We welcome any contributions you may have. If you're interested in helping out, 
 
 ## 📝 License
 
-This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
