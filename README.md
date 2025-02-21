@@ -1,6 +1,8 @@
 # 📇 Simple Profile Card
 
+![GitHub repo size](https://img.shields.io/github/repo-size/mr-mrf-dev/Simple-Profile-Card)
 [![pages-build-deployment](https://github.com/Mr-MRF-Dev/Simple-Profile-Card/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/Mr-MRF-Dev/Simple-Profile-Card/actions/workflows/pages/pages-build-deployment)
+[![GitHub License](https://img.shields.io/github/license/mr-mrf-dev/Simple-Profile-Card)](/LICENSE)
 
 This single-page website project allows you to create a simple and elegant profile card to share with others. It's a fun experiment where I used Figma to design the website and then converted it to HTML and CSS.
 
