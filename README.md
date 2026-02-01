@@ -6,7 +6,7 @@
 
 This single-page website project allows you to create a simple and elegant profile card to share with others. It's a fun experiment where I used Figma to design the website and then converted it to HTML and CSS.
 
-![Simple Profile Card](./assets/images/simple-profile-card.jpg)
+![Simple Profile Card](./assets/images/simple-profile-card.png)
 
 ## 🚀 Demos
 
