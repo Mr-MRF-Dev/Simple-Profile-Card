@@ -10,7 +10,7 @@ This single-page website project allows you to create a simple and elegant profi
 
 ## 🚀 Demos
 
-Check out the live demo [here](https://mr-mrf-dev.github.io/Simple-Profile-Card/).
+Check out the [live demo of Simple Profile Card](https://mr-mrf-dev.github.io/Simple-Profile-Card/).
 
 ## 🎨 Design
 
